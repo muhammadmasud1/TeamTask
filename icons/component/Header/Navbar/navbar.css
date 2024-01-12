@@ -1,0 +1,114 @@
+*{
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+}
+
+*{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+            font-family: 'Rubik', sans-serif;
+            font-family: 'Rufina', serif;
+}
+
+body {
+            background: #ffffff;
+}
+
+img {
+            width: 100%;
+            height: auto;
+}
+
+header {
+            width: 100%;
+            height: 100px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 30px 6%;
+            align-items: center;
+            background: #000;        
+            position: fixed;
+            right: 0;
+            top: 0;
+            z-index: 99999;
+}
+header img{
+              width: 200px;
+              height: auto;
+}
+
+
+header #navbar {
+            display: flex;
+}
+
+header #navbar li a {
+            padding: 0 15px;
+            display: inline-block;
+            color: #fff;
+            font-size: 20px;
+            text-transform: capitalize;
+            transition: 0.5s all ease;
+}
+header #navbar li a:hover {
+            transform: scale(1.2);
+            color: rgb(243, 43, 43);
+}
+
+header .icons a{
+            display: inline-flex;
+            padding: 0 15px;
+            width: 37px;
+            height: 37px;
+            background: #000;
+            color: #fff;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            margin: 8px;
+            transition: 0.5s all ease;
+            font-size: 20px; 
+}
+
+header .icons #showName {
+            background: transparent;
+            color: #fff;
+            border: 1px solid #ee0606;
+            display: none;
+            
+}
+
+@media (max-width:991px) {
+            header #navbar{
+                        position: fixed;
+                        top: 100px;
+                        left: -100%;
+                        flex-direction: column;
+                        background: #333;
+                        width: 100%;
+                        height: 100vh;
+                        color: #ccc;
+                        text-align: center;
+                        padding: 40px 0;
+                        transition: 0.5s all ease;
+            }
+            header #navbar li a {
+                        color: #fff;
+                        padding: 20px 0;
+            }
+            header .icons #showName {
+                        display: inline-flex;
+            }
+
+            header #navbar.toggle-nav{
+                        left: 0;
+            }  
+            
+    
+}
