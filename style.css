@@ -250,26 +250,25 @@ main{
 
 /* ===================pricing service seciton design===================== */
 
-#priceingService{
-             width: 100%;
-             margin: auto;
-             height: auto;
-             display: grid;
-             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-             justify-content: space-between;
-             align-items: center;
-             margin-top: 50px;
+#priceingService {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-top: 50px;
 }
 
-#priceingService .priceServiceContainer{
-             width: 300px;
-             margin: auto;
-             border: 1px solid #aaa; 
-             border-radius: 15px;
-             overflow: hidden;
-box-shadow: -2px 1px 22px 3px rgba(0,0,0,0.08);
--webkit-box-shadow: -2px 1px 22px 3px rgba(0,0,0,0.08);
--moz-box-shadow: -2px 1px 22px 3px rgba(0,0,0,0.08);
+#priceingService .priceServiceContainer {
+  flex: 1 0 calc(33.333% - 20px);
+  margin: 10px;
+  border: 1px solid #aaa;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: -2px 1px 22px 3px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: -2px 1px 22px 3px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: -2px 1px 22px 3px rgba(0, 0, 0, 0.08);
 }
 #priceingService .priceServiceContainer .discountContainer{
           background-color: #1fa1b8;
@@ -346,6 +345,71 @@ box-shadow: -2px 1px 22px 3px rgba(0,0,0,0.08);
               color: #fff;
             
 }
+
+
+@media only screen and (max-width: 1024px) {
+  #priceingService .priceServiceContainer {
+    flex: 1 0 calc(50% - 20px);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #priceingService .priceServiceContainer {
+    flex: 1 0 calc(100% - 20px);
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  #priceing .priceingContent h1 {
+    font-size: 28px;
+  }
+
+  #priceing .priceingContent p {
+    font-size: 14px;
+  }
+
+  .search input {
+    max-width: 100%; 
+  }
+
+  #priceDomainSelect {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #priceDomainSelect li {
+    margin-bottom: 10px; 
+  }
+}
+@media only screen and (max-width: 600px) {
+.search input {
+	width: 380px;
+	height: 50px;
+	border-radius: 25px;
+	background: #fcfcfc;
+	border: 1px solid #aaa;
+}
+}
+@media only screen and (max-width: 380px) {
+.search input {
+	width: 304px;
+	height: 50px;
+	border-radius: 25px;
+	background: #fcfcfc;
+	border: 1px solid #aaa;
+}
+.search button {
+	padding: 15px 17px;
+	border-radius: 25px;
+	font-size: 16px;
+}
+}
+
+
+
+
+
 #priceingService {
   width: 100%;
   margin: auto;
