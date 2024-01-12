@@ -1,0 +1,266 @@
+
+main{
+              width: 80%;
+              height: auto;
+              margin: auto;
+}  
+
+#priceing {
+           width: 100%;
+           height: auto;   
+}
+#priceing .priceingContent{
+              text-align: center;
+}
+#priceing .priceingContent h1{
+              color: #1B0760;
+              font-size: 35px;
+              font-weight: 600;
+              padding: 10px 0;
+}
+#priceing .priceingContent p {
+              color: #3f3e3e;
+              font-size: 16px;
+              font-weight: 400;
+              margin-bottom: 20px;
+}
+
+.search {
+  position: relative;
+  color: #aaa;
+  font-size: 16px;
+  border-radius: 25px;
+  box-shadow: 0 0 3px #ccc, 0 10px 15px #ebebeb inset;
+}
+
+.search {display: inline-block;}
+
+.search input {
+  width: 500px;
+  height: 50px;
+  border-radius: 25px;
+  background: #fcfcfc;
+  border: 1px solid #aaa;
+  
+  
+}
+.search button {
+              padding: 13px 25px;
+              border-radius: 25px ;
+              font-size: 20px;
+              letter-spacing: 2px;
+              background-color: #FF3400;
+              color: #fff;
+              text-align: center;
+              outline: none;
+}
+.search input { text-indent: 32px;}
+.search .fa-search { 
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  
+}
+
+.search .fa-search {left: auto; right: 0;}
+
+#priceDomainSelect {
+              display: flex;
+              gap: 10px;
+}
+#priceDomainSelect {
+              margin-top: 20px;
+              display: flex;
+              gap: 17px;
+              justify-content: center;
+              align-items: center;
+}
+#priceDomainSelect li a {
+              font-size: 18px;
+              color: #1B0760;           
+}
+#priceDomainSelect .active{
+              padding: 5px 12px;
+              border-radius: 15px;
+              background-color: #00D9FF;
+}
+
+/* ===================pricing service seciton design===================== */
+
+#priceingService {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-top: 50px;
+}
+
+#priceingService .priceServiceContainer {
+  flex: 1 0 calc(33.333% - 20px);
+  margin: 10px;
+  border: 1px solid #aaa;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: -2px 1px 22px 3px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: -2px 1px 22px 3px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: -2px 1px 22px 3px rgba(0, 0, 0, 0.08);
+}
+#priceingService .priceServiceContainer .discountContainer{
+          background-color: #1fa1b8;
+          padding: 10px 30px;
+          color: white;
+          
+}
+#priceingService .priceServiceContainer #discountContainerID{
+          background-color: #2584FF;
+          padding: 10px 30px;
+          color: white;
+          
+}
+#priceingService .priceServiceContainer .discountContainer .priceList{
+             text-align: start; 
+            
+}
+#priceingService .priceServiceContainer .discountContainer .priceList p{
+             font-size: 20px;
+             
+             color: white;
+}
+#priceingService .priceServiceContainer .discountContainer .priceList .servicePrice{
+             display: flex;
+             align-items: center;
+             gap: 10px;
+}
+#priceingService .priceServiceContainer .discountContainer .priceList .servicePrice h3{
+             padding: 5px 10px;
+             background: #49a4b4;
+             border-radius: 25px;
+}
+#priceingService .priceServiceContainer .discountContainer .priceList .servicePrice h1,h3{
+           color: #fff;
+}
+#priceingService .priceServiceContainer .benifitList{
+              text-align: start;
+              padding: 10px 30px;
+              margin-top: 10px ;
+}
+#priceingService .priceServiceContainer .benifitList .list{
+              display: flex;
+              gap: 10px;
+              
+}
+#priceingService .priceServiceContainer .benifitList .list i{
+              color: #0cbd8e;
+              font-size: 20px;
+              font-weight: 800;
+}
+#priceingService .priceServiceContainer .benifitList .list p{
+              color: #1B0760;
+              font-size: 20px;
+              
+}
+#priceingService .priceServiceContainer button{
+              padding: 15px 50px;
+              border: 1px solid #1B0760;
+              background: transparent;
+              border-radius: 25px;
+              font-size: 17px;
+              color: #1B0760;
+              cursor: pointer;
+              margin-bottom: 15px;
+
+}
+#priceingService .priceServiceContainer button:hover{
+              background-color: #1B0760;
+              color: #fff;
+              transition: 0.5s all ease;
+}
+#priceingService .priceServiceContainer .active{
+              background: #1B0760;
+              color: #fff;
+            
+}
+
+
+@media only screen and (max-width: 1024px) {
+  #priceingService .priceServiceContainer {
+    flex: 1 0 calc(50% - 20px);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #priceingService .priceServiceContainer {
+    flex: 1 0 calc(100% - 20px);
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  #priceing .priceingContent h1 {
+    font-size: 28px;
+  }
+
+  #priceing .priceingContent p {
+    font-size: 14px;
+  }
+
+  .search input {
+    max-width: 100%; 
+  }
+
+  #priceDomainSelect {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #priceDomainSelect li {
+    margin-bottom: 10px; 
+  }
+}
+@media only screen and (max-width: 600px) {
+.search input {
+	width: 380px;
+	height: 50px;
+	border-radius: 25px;
+	background: #fcfcfc;
+	border: 1px solid #aaa;
+}
+}
+@media only screen and (max-width: 380px) {
+.search input {
+	width: 304px;
+	height: 50px;
+	border-radius: 25px;
+	background: #fcfcfc;
+	border: 1px solid #aaa;
+}
+.search button {
+	padding: 15px 17px;
+	border-radius: 25px;
+	font-size: 16px;
+}
+}
+
+#priceingService {
+  width: 100%;
+  margin: auto;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-top: 50px;
+}
+
+#priceingService .priceServiceContainer {
+  flex: 1 0 300px;
+  margin: 10px;
+  border: 1px solid #aaa;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: -2px 1px 22px 3px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: -2px 1px 22px 3px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: -2px 1px 22px 3px rgba(0, 0, 0, 0.08);
+}

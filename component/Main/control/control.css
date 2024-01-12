@@ -1,0 +1,49 @@
+controlSection{
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    clip-path: polygon( 0.00% 0.80%, 98.00% 0.00%, 99.40% 0.00%, 100% 90.00%, 
+    100% 99.60%, 0.00% 89.60%, 0.00% 89.60%, 0.00% 0.00% );
+}.controlSection #controlPanelContainer{
+ width: 80%;
+ padding: 20px 0;
+ margin: auto;
+}
+.controlSection #controlPanelContainer h1{
+ color: #fff;
+ font-size: 40px;
+ text-align: center;
+ padding: 50px 0;
+}
+.controlSection #controlPanelContainer .controlItem{
+   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px,1fr));
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+}
+.controlSection #controlPanelContainer .controlItem img{
+  width: 100%;
+}
+.controlSection #controlPanelContainer 
+.controlItem .controlContent .singleItem{
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  align-items: center;
+  gap: 10px;
+
+   & h2 {
+    color: #ffff;
+    font-size: 25px;  
+ }
+ & p {
+  padding: 10px 0;
+  color: #aaa;
+ }
+}
+.controlSection #controlPanelContainer 
+.controlItem .controlContent .singleItem li{
+ font-size: 45px;
+ color: #2584FF;
+}

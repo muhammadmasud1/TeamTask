@@ -1,0 +1,89 @@
+.userBox {
+  max-width: 80%;
+  margin: auto;
+  padding: 30px 0;
+
+  & .textContent {
+    text-align: center;
+
+    & h1{
+     font-size: 30px;
+     color: #1B0760;
+     font-weight: 600;
+    }
+    & p {
+    color: #3f3e3e;
+    font-size: 16px;
+    }
+  }
+}
+
+.customerInfo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin-top: 30px;
+  padding: 15px 15px;
+  border-radius: 10px;
+}
+
+.customerInfo .position {
+  position: relative;
+  text-align: center;
+}
+
+.customerInfo .position img {
+  width: 100%;
+}
+
+.customerInfo .icons {
+  position: absolute;
+  top: 35px;
+  right: -30px;
+  width: 60px;
+  height: 60px;
+  background-color: red;
+  border-radius: 50%;
+  z-index: 11111;
+  margin-bottom: 10px;
+  text-align: center;
+  color: white;
+  display: inline-block;
+}
+
+.customerInfo .icons i {
+  margin-top: 22px;
+  font-size: 20px;
+}
+
+.customerInfo h2 {
+  font-size: 20px;
+  color: #3f3e3e;
+  line-height: 28px;
+}
+
+.customerInfo h3 {
+  margin-top: 10px;
+  color: #1B0760;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+}
+
+.customerInfo p {
+  color: #3f3e3e;
+  padding-left: 15px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .userBox {
+    max-width: 100%;
+  }
+
+  .customerInfo {
+    grid-template-columns: 1fr;
+  }
+}

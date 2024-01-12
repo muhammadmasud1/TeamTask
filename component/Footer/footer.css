@@ -1,0 +1,150 @@
+
+footer {
+  padding-top: 150px;
+  margin-top: 50px;
+}
+
+/* Footer Ads Section */
+.footerAds {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	width: 90%;
+	max-width: 720px;
+	margin: auto;
+	background-color: #2584FF;
+	border-radius: 20px;
+	padding: 46px;
+	position: absolute;
+	left: -50%;
+	right: -50%;
+	margin-top: 93px;
+	z-index: 6555;
+}
+
+.footerAds h1 {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 700;
+  padding: 10px 0;
+}
+
+.footerAds p {
+  color: floralwhite;
+  font-size: 18px;
+}
+
+.footerAds button {
+  padding: 15px 30px;
+  background: red;
+  color: #fff;
+  border: 0;
+  outline: 0;
+  border-radius: 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Main Footer Section */
+#footer {
+  background-color: #000000;
+  position: relative;
+
+  
+
+}
+
+#footer .sub-footer {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-content: center;
+  gap: 20px;
+  padding: 50px 0;
+  padding-bottom: 100px;
+
+  
+
+}
+
+#footer .sub-footer img {
+  width: 100%;
+}
+
+#footer .sub-footer p {
+  color: #f5eded;
+  padding-left: 10px;
+}
+
+#footer .breakpoints{
+
+  padding-block-start: 5%;
+}
+
+#footer .sub-footer .footer-content h5 {
+  color: #f5eded;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+  font-weight: bold;
+}
+
+#footer .sub-footer .footer-content li {
+  padding: 6px 0;
+}
+
+#footer .sub-footer .footer-content li a {
+  color: #ccc;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* Media Query for smaller screens */
+@media only screen and (max-width: 768px) {
+  .footerAds {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #footer .sub-footer {
+    grid-template-columns: 1fr;
+  }
+
+  #footer .sub-footer .footer-content {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 600px) {
+  
+
+  #footer .sub-footer .footer-content {
+    text-align: center;
+  }
+  .footerAds {
+	width: 66%;
+	max-width: 690px;
+	padding: 29px;
+	position: absolute;
+	left: -50%;
+	right: -50%;
+	margin-top: 4px;
+	z-index: 6555;
+}
+
+}
+@media only screen and (max-width: 380px){
+ .footerAds {
+	width: 66%;
+	max-width: 690px;
+	padding: 29px;
+	position: absolute;
+	left: -50%;
+	right: -50%;
+	margin-top: -22px;
+	z-index: 6555;
+}
+}

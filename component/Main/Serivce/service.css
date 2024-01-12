@@ -1,0 +1,47 @@
+#supportService {
+
+}
+#supportService  .supportTitle {
+text-align: center;
+padding-top: 70px;
+
+
+
+}
+#supportService  .supportTitle h1{
+  color: #1B0760;
+  font-size: 30px;
+  font-weight: 600;
+  font-weight: 600;
+}
+#supportService  .supportTitle p{
+  color: #3f3e3e;
+}
+#supportService .supportEasyContainer{
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px,1fr));
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+#supportService .supportEasyContainer .easyContent li i{
+ font-size: 50px;
+ background-color: #c7eef5;
+ border-radius: 30px;
+ color: #1B0760;
+
+}
+#supportService .supportEasyContainer .easyContent h1{
+  font-size: 30px;
+  color: #1B0760;
+  margin: 10px 0;
+  
+}
+#supportService .supportEasyContainer .easyContent p{
+  color: #3f3e3e;
+  font-size: 17px;
+
+  margin-bottom: 40px;
+}
